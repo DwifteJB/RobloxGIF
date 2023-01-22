@@ -11,7 +11,7 @@ pcall(function()
 end)
 
 if not FastSignal then
-	warn(`[{script.Name}]: GoodSignal not found. GIF.Finished will not work.`)
+	warn(`[{script.Name}]: FastSignal not found. GIF.Finished will not work.`)
 end
 
 local RobloxMaxImageSize = 1024
