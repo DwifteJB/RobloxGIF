@@ -144,7 +144,7 @@ end
 RunService.Heartbeat:Connect(function(dt)
 	for _, Frame in ToUpdate do
 		if not Frame or not Frame.ImageLabel or not Frame.ImageLabel:IsDescendantOf(game) then
-			table.remove(ToUpdate,table.find(ToUpdate,Frame))
+			pcall(function() frame:Disconnect() end)
 		else
 			Frame:Update()
 		end
