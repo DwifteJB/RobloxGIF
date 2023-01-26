@@ -10,6 +10,7 @@ Use the GIF_PLAYER.rbxm or get the asset <a href="https://www.roblox.com/library
 ## Usage:
 
 Convert Gif to Spritesheet <a href="https://jacklehamster.github.io/utils/gif2sprite/">here</a> (for spritesheet)
+Convert Gif to Frames <a href="https://ezgif.com/split">here</a> (for seperate image rendering)
 
 ### Multiple Images:
 
