@@ -1,27 +1,16 @@
 # RobloxGIF
 
+<a href="https://www.roblox.com/games/12279616936/GIF-Player-Preview">EXAMPLE PLACE</a>
+
+## How to download:
+
+Use the GIF_PLAYER.rbxm or get the asset <a href="https://www.roblox.com/library/12279554404/GIF-PLAYER-IMAGELABELS">here</a> (12279554404)
+
+
 ## Usage:
 
-Convert Gif to Spritesheet <a href="https://jacklehamster.github.io/utils/gif2sprite/">here</a>
+Convert Gif to Spritesheet <a href="https://jacklehamster.github.io/utils/gif2sprite/">here</a> (for spritesheet)
 
-Create ImageLabel, set size and put that image on it
+### Multiple Images:
 
-    local GIF = require(script.Parent.GIF_PLAYER)
-     
-    -- GIF:New(ImageLabel Instance, SpriteSheet Width, SpriteSheet Height, Columns, Rows, NumberOfFrames, FrameRate, Optional Options)
-    local y = GIF:New(script.Parent.ImageLabel,2560,2880,4,2,8,25,{
-        Repeat=false,
-        PauseOn={
-            ["4"]=25; -- pause on frame 4 for 10 frames
-        }
-    })
-
-    -- if FastSignal is found
-
-    y.FrameUpdate:Connect(function(frame)
-        print("Frame update:",frame)
-    end)
-
-    y.Finished:Connect(function()
-        print("FINISHED GIF")
-    end)
+    src/StarterGui/EXAMPLE.client.lua
